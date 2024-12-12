@@ -8,8 +8,6 @@ class Animal:
 
 
     def eat (self, food):
-        type(food) == __class__(Plant)
-
         if  food.edible == True:
             print(f'{self.name} съел {food.name}')
             self.fed = True
@@ -58,5 +56,5 @@ a1.eat(p1)
 a2.eat(p2)
 print(a1.alive)
 print(a2.fed)
-print(a2.__dict__)
-print(type(p1))
+#print(a2.__dict__)
+#print(type(p1))
